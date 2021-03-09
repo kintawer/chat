@@ -3,7 +3,7 @@ import websockets
 
 
 async def client():
-    uri = "ws://localhost:8765"
+    uri = "ws://127.0.0.1:8765"
     async with websockets.connect(uri) as websocket:
         recv = asyncio.create_task(receiver(websocket))
         send = asyncio.create_task(sender(websocket))

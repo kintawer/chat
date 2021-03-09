@@ -95,5 +95,5 @@ class ChatServer:
 
 if __name__ == '__main__':
     configure_logging()
-    srv = ChatServer("localhost", 8765)
+    srv = ChatServer("0.0.0.0", 8765)
     srv.run()
